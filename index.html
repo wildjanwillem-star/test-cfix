@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Fix | GSM & Mobiele Reparaties Nijkerk</title>
+  <meta name="description" content="C-Fix - Professionele telefoon, tablet, laptop en PC reparaties in Nijkerk en omgeving. No Fix No Pay. Snel, vakkundig en betaalbaar.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-screen">
+  <div class="loading-phone"></div>
+  <img src="images/logo.png" alt="C-Fix" class="loading-logo">
+  <div class="loading-bar-track"><div class="loading-bar"></div></div>
+  <p class="loading-text">Apparaat wordt opgestart...</p>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo"><img src="images/logo.png" alt="C-Fix logo"></a>
+    <nav class="desktop-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="afspraak.html" class="nav-cta">Afspraak maken</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="over-ons.html">Over ons</a>
+  <a href="faq.html">FAQ</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a href="afspraak.html" class="nav-cta">Afspraak maken</a>
+</nav>
+
+<main class="page-content">
+
+<!-- USP Bar -->
+<div class="usp-bar" style="margin-top:72px;">
+  <div class="usp-track">
+    <div class="usp-item"><span class="icon">✓</span> No Fix No Pay</div>
+    <div class="usp-item"><span class="icon">⚡</span> Snelle reparatie</div>
+    <div class="usp-item"><span class="icon">🛡️</span> Garantie op reparaties</div>
+    <div class="usp-item"><span class="icon">📱</span> Telefoon, Tablet, Laptop & PC</div>
+    <div class="usp-item"><span class="icon">🏠</span> Service aan huis in regio Nijkerk</div>
+    <div class="usp-item"><span class="icon">💰</span> Scherpe prijzen</div>
+    <div class="usp-item"><span class="icon">✓</span> No Fix No Pay</div>
+    <div class="usp-item"><span class="icon">⚡</span> Snelle reparatie</div>
+    <div class="usp-item"><span class="icon">🛡️</span> Garantie op reparaties</div>
+    <div class="usp-item"><span class="icon">📱</span> Telefoon, Tablet, Laptop & PC</div>
+    <div class="usp-item"><span class="icon">🏠</span> Service aan huis in regio Nijkerk</div>
+    <div class="usp-item"><span class="icon">💰</span> Scherpe prijzen</div>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="dot"></span> Nijkerk &amp; omgeving</div>
+      <h1>Kapot apparaat? <span>C-Fix repareert het.</span></h1>
+      <p>Professionele reparaties van smartphones, tablets, laptops en PC's. Vakkundig, snel en tegen een eerlijke prijs. Geen kosten als het niet lukt.</p>
+      <div class="hero-buttons">
+        <a href="afspraak.html" class="btn-primary">📅 Afspraak maken</a>
+        <a href="#diensten" class="btn-secondary">Bekijk diensten</a>
+      </div>
+      <div class="nfnp-badge">
+        <span class="lime-dot"></span>
+        <span>No Fix, No Pay garantie</span>
+      </div>
+    </div>
+    <div class="hero-images">
+      <div class="hero-img-wrap"><img src="images/repair-2.jpg" alt="Telefoon reparatie C-Fix" loading="lazy"></div>
+      <div class="hero-img-wrap"><img src="images/repair-6.jpg" alt="iPhone achterkant reparatie" loading="lazy"></div>
+      <div class="hero-img-wrap"><img src="images/repair-5.jpg" alt="Samsung reparatie werkbank" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats-strip reveal">
+  <div class="stat-item">
+    <div class="stat-num">2+</div>
+    <div class="stat-label">Jaar ervaring</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">Reparaties uitgevoerd</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">15+</div>
+    <div class="stat-label">Plaatsen in servicegebied</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">MBO 4</div>
+    <div class="stat-label">ICT opleiding</div>
+  </div>
+</div>
+
+<!-- Why C-Fix -->
+<section class="section reveal" id="waarom">
+  <div class="section-header">
+    <div class="badge">Waarom C-Fix?</div>
+    <h2>Reparatie waar je op kunt vertrouwen</h2>
+    <p>Bij C-Fix combineer ik vakmanschap met persoonlijke aandacht. Dit is wat ons anders maakt:</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon lime">🛡️</div>
+      <h3>No Fix, No Pay</h3>
+      <p>Lukt de reparatie niet? Dan betaal je niets. Zo simpel is het. Je loopt dus nooit risico als je jouw apparaat bij ons brengt.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon teal">🎓</div>
+      <h3>Gecertificeerd vakmanschap</h3>
+      <p>Met een afgeronde MBO 2 ICT Support en momenteel in het examenjaar van MBO 4 Expert IT Systems & Devices ben ik altijd op de hoogte van de nieuwste techniek.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon cyan">💬</div>
+      <h3>Eerlijk advies</h3>
+      <p>Vooraf duidelijkheid over mogelijkheden, kosten en de beste oplossing. Geen verrassingen achteraf. Transparant en open.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon lime">⚡</div>
+      <h3>Snelle service</h3>
+      <p>De meeste reparaties worden dezelfde dag of binnen 24 uur uitgevoerd. Zo heb je jouw apparaat snel weer terug.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon teal">💰</div>
+      <h3>Scherpe prijzen</h3>
+      <p>Kwalitatieve reparaties hoeven niet duur te zijn. Bij C-Fix betaal je een eerlijke prijs zonder verborgen kosten.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon cyan">🏠</div>
+      <h3>Persoonlijke aanpak</h3>
+      <p>Geen groot bedrijf met lange wachttijden, maar persoonlijke service. Ik denk graag met je mee over de beste oplossing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section services-bg reveal" id="diensten">
+  <div class="section-header">
+    <div class="badge">Onze diensten</div>
+    <h2>Wat kunnen we voor je repareren?</h2>
+    <p>Van een kapot scherm tot een trage laptop. C-Fix helpt je met alle apparaten.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="icon">📱</span>
+      <h3>Smartphone reparatie</h3>
+      <p>Schermvervanging, batterij, oplaadpoort, camera, speaker en meer. Alle merken.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon">📋</span>
+      <h3>Tablet reparatie</h3>
+      <p>iPad, Samsung Tab en meer. Scherm, batterij, aansluiting of software problemen.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon">💻</span>
+      <h3>Laptop reparatie</h3>
+      <p>Scherm, toetsenbord, scharnier, SSD upgrade, fan reiniging en meer.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon">🖥️</span>
+      <h3>PC reparatie</h3>
+      <p>Hardware diagnose, onderdelen vervangen, Windows installatie, opschonen en optimaliseren.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon">🔧</span>
+      <h3>Software support</h3>
+      <p>Virus verwijderen, data recovery, OS installatie, drivers en configuratie.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon">💧</span>
+      <h3>Waterschade</h3>
+      <p>Snel handelen is belangrijk. Breng je apparaat zo snel mogelijk langs voor de beste kans op herstel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Werkwijze / Process -->
+<section class="section reveal">
+  <div class="section-header">
+    <div class="badge">Werkwijze</div>
+    <h2>Hoe werkt het?</h2>
+    <p>In vier simpele stappen is jouw apparaat weer als nieuw.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">1</div>
+      <h3>Neem contact op</h3>
+      <p>Maak een afspraak via het formulier of bel ons direct. Vertel wat er aan de hand is.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">2</div>
+      <h3>Diagnose</h3>
+      <p>We bekijken jouw apparaat en stellen een diagnose. Je krijgt vooraf een eerlijke prijsindicatie.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">3</div>
+      <h3>Reparatie</h3>
+      <p>Na akkoord gaan we direct aan de slag. De meeste reparaties zijn dezelfde dag klaar.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">4</div>
+      <h3>Ophalen</h3>
+      <p>Je apparaat is gerepareerd en getest. Je betaalt pas als alles naar wens werkt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section services-bg reveal">
+  <div class="section-header">
+    <div class="badge">Ons werk</div>
+    <h2>Een kijkje in de werkplaats</h2>
+    <p>Echte foto's van echte reparaties. Vakmanschap dat je kunt zien.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/repair-1.jpg" alt="Scherm verwijderen" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-2.jpg" alt="iPhone reparatie" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-3.jpg" alt="Telefoon binnenkant" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-4.jpg" alt="Samsung werkplaats" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-5.jpg" alt="Batterij vervanging" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-6.jpg" alt="iPhone beschadigd" loading="lazy"></div>
+    <div class="gallery-item"><img src="images/repair-7.jpg" alt="Reparatie gereedschap" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- Service Area Map -->
+<section class="section map-section reveal">
+  <div class="section-header">
+    <div class="badge">Servicegebied</div>
+    <h2>Waar zijn we actief?</h2>
+    <p>C-Fix is actief in Nijkerk en de wijde omgeving. Bekijk hieronder ons servicegebied.</p>
+  </div>
+  <div class="map-container">
+    <div id="service-map"></div>
+    <div class="map-legend">
+      <h3>📍 Servicegebied</h3>
+      <div class="legend-item">
+        <span class="legend-dot teal"></span>
+        <span><strong>Nijkerk</strong> — Hoofdlocatie</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot green"></span>
+        <span>Servicegebied</span>
+      </div>
+      <hr style="border:none;border-top:1px solid rgba(12,97,112,0.1);margin:12px 0;">
+      <p style="font-size:0.82rem;opacity:0.7;margin-bottom:8px;">Plaatsen in ons servicegebied:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;">
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Nijkerk</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Amersfoort</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Harderwijk</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Ermelo</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Putten</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Bunschoten</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Zeewolde</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Voorthuizen</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Nijkerkerveen</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Hoevelaken</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Vathorst</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Terschuur</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Zwartebroek</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Schothorst</span>
+        <span style="background:rgba(92,230,92,0.1);padding:4px 10px;border-radius:20px;font-size:0.78rem;color:#0C6170;">Centrum</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="section">
+  <div class="cta-banner reveal">
+    <h2>Apparaat stuk? Wij helpen je verder.</h2>
+    <p>Maak vandaag nog een afspraak en je apparaat is snel weer als nieuw.</p>
+    <a href="afspraak.html" class="btn-primary">📅 Afspraak maken</a>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="C-Fix">
+      <p>Vakkundige reparatie van smartphones, tablets, laptops en PC's in Nijkerk en omgeving. Persoonlijk advies, scherpe prijzen.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pagina's</h4>
+      <a href="index.html">Home</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h4>Diensten</h4>
+      <a href="afspraak.html">Telefoon reparatie</a>
+      <a href="afspraak.html">Tablet reparatie</a>
+      <a href="afspraak.html">Laptop reparatie</a>
+      <a href="afspraak.html">PC reparatie</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info@c-fix.nl">info@c-fix.nl</a>
+      <!-- TELEFOONNUMMER: Vervang hieronder -->
+      <a href="tel:+31XXXXXXXXXX" id="footer-phone">Bel ons</a>
+      <a href="contact.html">Contactformulier</a>
+      <a href="afspraak.html">Afspraak maken</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 C-Fix. Alle rechten voorbehouden aan Wild IT Solutions.</span>
+    <!-- KVK NUMMER: Vervang hieronder -->
+    <span class="kvk">KVK: <span id="kvk-nummer">XXXXXXXX</span></span>
+  </div>
+</footer>
+
+<!-- TELEFOONNUMMER: Vervang href hieronder met tel:+31XXXXXXXXXX -->
+<a href="tel:+31XXXXXXXXXX" class="call-button" id="call-btn" title="Bel ons">📞</a>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

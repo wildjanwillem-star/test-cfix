@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afspraak maken | C-Fix Reparaties Nijkerk</title>
+  <meta name="description" content="Maak direct een afspraak voor de reparatie van jouw telefoon, tablet, laptop of PC bij C-Fix in Nijkerk.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo"><img src="images/logo.png" alt="C-Fix logo"></a>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="afspraak.html" class="nav-cta active">Afspraak maken</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="over-ons.html">Over ons</a>
+  <a href="faq.html">FAQ</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a href="afspraak.html" class="nav-cta">Afspraak maken</a>
+</nav>
+
+<main class="page-content">
+<section class="form-page">
+  <div class="form-container">
+    <h1>Afspraak maken</h1>
+    <p class="subtitle">Vul het formulier in en we nemen zo snel mogelijk contact met je op. Stuur je liever een bericht? Mail naar <a href="mailto:janwillem@c-fix.nl" style="color:var(--cyan);">janwillem@c-fix.nl</a></p>
+
+    <form id="appointment-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="naam">Naam *</label>
+          <input type="text" id="naam" name="naam" placeholder="Je volledige naam" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mailadres *</label>
+          <input type="email" id="email" name="email" placeholder="je@email.nl" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="telefoon">Telefoonnummer *</label>
+        <input type="tel" id="telefoon" name="telefoon" placeholder="06 - 12345678" required>
+      </div>
+
+      <div class="form-group">
+        <label for="device-type">Type apparaat *</label>
+        <select id="device-type" name="device-type" required>
+          <option value="">Selecteer type apparaat...</option>
+          <option value="telefoon">📱 Telefoon</option>
+          <option value="tablet">📋 Tablet</option>
+          <option value="laptop">💻 Laptop</option>
+          <option value="pc">🖥️ PC / Desktop</option>
+        </select>
+      </div>
+
+      <!-- PC: Direct probleem -->
+      <div class="form-group" id="pc-problem-group" style="display:none;">
+        <label for="pc-probleem">Beschrijf het probleem *</label>
+        <textarea id="pc-probleem" name="pc-probleem" placeholder="Beschrijf zo duidelijk mogelijk wat er aan de hand is met je PC..."></textarea>
+      </div>
+
+      <!-- Brand selection -->
+      <div class="form-group" id="brand-group" style="display:none;">
+        <label for="device-brand">Merk *</label>
+        <select id="device-brand" name="device-brand">
+          <option value="">Selecteer merk...</option>
+        </select>
+      </div>
+
+      <!-- Model selection -->
+      <div class="form-group" id="model-group" style="display:none;">
+        <label for="device-model">Model *</label>
+        <select id="device-model" name="device-model">
+          <option value="">Selecteer model...</option>
+        </select>
+      </div>
+
+      <!-- Edition (only for phones) -->
+      <div class="form-group" id="edition-group" style="display:none;">
+        <label for="device-edition">Uitvoering</label>
+        <select id="device-edition" name="device-edition">
+          <option value="">Selecteer uitvoering...</option>
+        </select>
+      </div>
+
+      <!-- Problem description (for non-PC) -->
+      <div class="form-group">
+        <label for="probleem">Wat is het probleem? *</label>
+        <select name="probleem" id="probleem-type">
+          <option value="">Selecteer het type probleem...</option>
+          <option value="Scherm kapot / gebarsten">Scherm kapot / gebarsten</option>
+          <option value="Batterij probleem">Batterij probleem</option>
+          <option value="Oplaadpoort defect">Oplaadpoort defect</option>
+          <option value="Camera probleem">Camera probleem</option>
+          <option value="Speaker / microfoon probleem">Speaker / microfoon probleem</option>
+          <option value="Achterkant / behuizing beschadigd">Achterkant / behuizing beschadigd</option>
+          <option value="Waterschade">Waterschade</option>
+          <option value="Software probleem">Software probleem</option>
+          <option value="Knop defect">Knop defect</option>
+          <option value="Overig">Overig</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="datum">Voorkeursdatum</label>
+        <input type="date" id="datum" name="datum">
+      </div>
+
+      <div class="form-group">
+        <label for="opmerkingen">Extra opmerkingen</label>
+        <textarea id="opmerkingen" name="opmerkingen" placeholder="Eventuele extra informatie over het probleem..." rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">Afspraak aanvragen</button>
+    </form>
+
+    <div class="form-success" id="form-success">
+      <div class="check">✅</div>
+      <h2>Aanvraag verzonden!</h2>
+      <p>Je e-mailprogramma wordt geopend met de gegevens. Verstuur de mail om je afspraak te bevestigen. We nemen zo snel mogelijk contact met je op.</p>
+      <a href="index.html" class="btn-primary" style="margin-top:20px;">Terug naar home</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="C-Fix">
+      <p>Vakkundige reparatie in Nijkerk en omgeving.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pagina's</h4>
+      <a href="index.html">Home</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info@c-fix.nl">info@c-fix.nl</a>
+      <a href="tel:+31XXXXXXXXXX">Bel ons</a>
+      <a href="contact.html">Contactformulier</a>
+    </div>
+    <div class="footer-col">
+      <h4>Diensten</h4>
+      <a href="afspraak.html">Telefoon reparatie</a>
+      <a href="afspraak.html">Tablet reparatie</a>
+      <a href="afspraak.html">Laptop reparatie</a>
+      <a href="afspraak.html">PC reparatie</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 C-Fix. Alle rechten voorbehouden aan Wild IT Solutions.</span>
+    <span class="kvk">KVK: <span id="kvk-nummer">XXXXXXXX</span></span>
+  </div>
+</footer>
+
+<a href="tel:+31XXXXXXXXXX" class="call-button" title="Bel ons">📞</a>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
